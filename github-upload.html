@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ช่วยอัปโหลดขึ้น GitHub</title>
+<style>body{font-family:Sarabun,Tahoma,sans-serif;max-width:560px;margin:30px auto;padding:0 14px;line-height:1.7}input,button{font:inherit;padding:8px;width:100%;margin:4px 0}</style></head><body>
+<h2>ช่วยเปิดหน้าอัปโหลดของ GitHub</h2>
+<p>1) ถ้ายังไม่มี repository ให้สร้างก่อน (ตั้งเป็น Public)</p><button onclick="window.open('https://github.com/new','_blank')">สร้าง repository ใหม่</button>
+<p>2) กรอกชื่อบัญชีและชื่อ repository แล้วเปิดหน้าอัปโหลด จากนั้นลากไฟล์ทั้งหมดที่แตกจาก zip ลงไป</p>
+<input id="u" value="pisite2543nac-netizen" placeholder="ชื่อบัญชี GitHub"><input id="r" placeholder="ชื่อ repository">
+<button onclick="o('upload/main')">เปิดหน้าอัปโหลดไฟล์</button>
+<p>3) เปิด Pages: Settings → Pages → Branch: main / (root) → Save</p><button onclick="o('settings/pages')">เปิดหน้าตั้งค่า Pages</button>
+<script>function o(p){var u=document.getElementById('u').value.trim(),r=document.getElementById('r').value.trim();if(!u||!r){alert('กรอกชื่อบัญชีและ repository');return}window.open('https://github.com/'+u+'/'+r+'/'+p,'_blank')}</script></body></html>
